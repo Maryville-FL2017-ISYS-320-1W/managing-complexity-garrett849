@@ -34,19 +34,22 @@ Line Number		| HEADING		| HEADING		| HEADING		| HEADING		| HEADING		|
 public class P2_SlashesAndBangs {
 
 	public static void main(String[] args) {
-
-		int row = 5;
+		
+	  for row = 0 - 5;  row = (<6);
 		int countOfSlashes = row * 2;
-		for (int i = 0; i < countOfSlashes; i++) {
-			for (int j = 0; j < i; j++) {
+		int countOfbangs = 22 -(2*countOfSlashes);
+		
+			 
+			for (int i = 0; i < countOfSlashes; i++) {
 				System.out.print("\\");
 			}
-			int bangs = 22 - (2 * countOfSlashes);
-			for (int k = 0; k < bangs; k++) {
+			for (int i = 0; i < countOfbangs; i++) {
 				System.out.print("!");
+			}
+			for (int i = 0; i < countOfSlashes; i++) {
+				System.out.print("\\");
 			}
 				
 			System.out.println("");
 		}
-	}
 }
