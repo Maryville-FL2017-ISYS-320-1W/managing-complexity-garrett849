@@ -10,14 +10,20 @@
  * the figure.
   
 Line Number		| HEADING		| HEADING		| HEADING		| HEADING		| HEADING		|	
-
-
-
-
+0    \=0   !=22
+1    \=4   !=18
+2    \=8   !=14
+3    \=12  !=10
+4    \=18  !=6
+5    \=20  !=2
 
 */
 
 /* 3. Using your analysis from above, in pseudocode describe the algorithm for how to draw the figure
+ print slashes 2 * row
+ print bangs = 22 - slashes
+ print slashes 2 * row
+ println
  
  
  
@@ -29,21 +35,18 @@ public class P2_SlashesAndBangs {
 
 	public static void main(String[] args) {
 
-		int hight = 7;
-		for (int i = 0; i <= hight; i++) {
+		int row = 5;
+		int countOfSlashes = row * 2;
+		for (int i = 0; i < countOfSlashes; i++) {
 			for (int j = 0; j < i; j++) {
 				System.out.print("\\");
 			}
-			int count = (hight - i) * 2 + 1;
-			for (int k = 0; k < count; k++) {
+			int bangs = 22 - (2 * countOfSlashes);
+			for (int k = 0; k < bangs; k++) {
 				System.out.print("!");
 			}
-			int back = (count + i) * 2 + 1;
-			for (int c = 0; c < back; c++) {
-				System.out.print("\\");
-			}
+				
 			System.out.println("");
 		}
 	}
-
 }
