@@ -35,7 +35,7 @@ public class P2_SlashesAndBangs {
 
 	public static void main(String[] args) {
 		
-	  for (int row = 0 - 5; row = <6 row++);
+	  for (int row = 0 - 5; row = <6 row++); {
 		int countOfSlashes = row * 2;
 		int countOfbangs = 22 -(2*countOfSlashes);
 		
@@ -52,4 +52,5 @@ public class P2_SlashesAndBangs {
 				
 			System.out.println("");
 		}
+}
 }
